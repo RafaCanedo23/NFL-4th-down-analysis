@@ -1,0 +1,388 @@
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+ERROR:root:Error training neural network: Graph execution error:
+
+Detected at node binary_crossentropy/Cast defined at (most recent call last):
+  File "c:\Users\rafae\OneDrive\Documentos\GitHub\TOG\nn_training.py", line 92, in <module>
+
+  File "c:\Users\rafae\OneDrive\Documentos\GitHub\TOG\nn_training.py", line 53, in train_neural_network
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1807, in fit
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1401, in train_function
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1384, in step_function
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1373, in run_step
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1151, in train_step
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1209, in compute_loss
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\compile_utils.py", line 277, in __call__
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 143, in __call__
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 270, in call
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 2521, in binary_crossentropy
+
+Cast string to float is not supported
+	 [[{{node binary_crossentropy/Cast}}]] [Op:__inference_train_function_1465]
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+ERROR:root:Error training neural network: in user code:
+
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1401, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1384, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1373, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1150, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+
+    ValueError: Exception encountered when calling layer 'dropout' (type Dropout).
+    
+    `rate` must be a scalar tensor or a float in the range [0, 1). Received: rate=1
+    
+    Call arguments received by layer 'dropout' (type Dropout):
+      • inputs=tf.Tensor(shape=(None, 16), dtype=float32)
+      • training=True
+
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+ERROR:root:Error training neural network: Graph execution error:
+
+Detected at node binary_crossentropy/Cast defined at (most recent call last):
+  File "c:\Users\rafae\OneDrive\Documentos\GitHub\TOG\nn_training.py", line 92, in <module>
+
+  File "c:\Users\rafae\OneDrive\Documentos\GitHub\TOG\nn_training.py", line 53, in train_neural_network
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1807, in fit
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1401, in train_function
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1384, in step_function
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1373, in run_step
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1151, in train_step
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1209, in compute_loss
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\compile_utils.py", line 277, in __call__
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 143, in __call__
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 270, in call
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 2521, in binary_crossentropy
+
+Cast string to float is not supported
+	 [[{{node binary_crossentropy/Cast}}]] [Op:__inference_train_function_1416]
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+ERROR:root:Error training neural network: Graph execution error:
+
+Detected at node binary_crossentropy/Cast defined at (most recent call last):
+  File "c:\Users\rafae\OneDrive\Documentos\GitHub\TOG\nn_training.py", line 92, in <module>
+
+  File "c:\Users\rafae\OneDrive\Documentos\GitHub\TOG\nn_training.py", line 53, in train_neural_network
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 65, in error_handler
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1807, in fit
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1401, in train_function
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1384, in step_function
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1373, in run_step
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1151, in train_step
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1209, in compute_loss
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\compile_utils.py", line 277, in __call__
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 143, in __call__
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 270, in call
+
+  File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\losses.py", line 2521, in binary_crossentropy
+
+Cast string to float is not supported
+	 [[{{node binary_crossentropy/Cast}}]] [Op:__inference_train_function_1465]
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5073932409286499, Accuracy: 0.7469387650489807, Recall: 0.7416666746139526
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.4855850338935852, Accuracy: 0.7510204315185547, Recall: 0.7527777552604675
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.4934055507183075, Accuracy: 0.7496598362922668, Recall: 0.7222222089767456
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.4914912283420563, Accuracy: 0.75782310962677, Recall: 0.7527777552604675
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+ERROR:root:Error training neural network: in user code:
+
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1401, in train_function  *
+        return step_function(self, iterator)
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1384, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1373, in run_step  **
+        outputs = model.train_step(data)
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\training.py", line 1150, in train_step
+        y_pred = self(x, training=True)
+    File "C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+
+    ValueError: Exception encountered when calling layer 'dropout_2' (type Dropout).
+    
+    `rate` must be a scalar tensor or a float in the range [0, 1). Received: rate=1
+    
+    Call arguments received by layer 'dropout_2' (type Dropout):
+      • inputs=tf.Tensor(shape=(None, 16), dtype=float32)
+      • training=True
+
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.4897240996360779, Accuracy: 0.7605442404747009, Recall: 0.7083333134651184
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.4875252842903137, Accuracy: 0.7687074542045593, Recall: 0.6916666626930237
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5427005887031555, Accuracy: 0.7401360273361206, Recall: 0.7583333253860474
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+ERROR:root:Error training neural network: name 'l2' is not defined
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+ERROR:root:Error training neural network: name 'L2' is not defined
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+ERROR:root:Error training neural network: name 'regularizers' is not defined
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+ERROR:root:Error training neural network: name 'EarlyStopping' is not defined
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+ERROR:root:Error training neural network: cannot access local variable 'early_stopping' where it is not associated with a value
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5909826159477234, Accuracy: 0.7115646004676819, Recall: 0.5472221970558167
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5061432719230652, Accuracy: 0.7496598362922668, Recall: 0.8055555820465088
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5259760022163391, Accuracy: 0.7401360273361206, Recall: 0.8027777671813965
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5118258595466614, Accuracy: 0.7523809671401978, Recall: 0.6833333373069763
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5206289887428284, Accuracy: 0.7455782294273376, Recall: 0.7722222208976746
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5250298976898193, Accuracy: 0.7632653117179871, Recall: 0.7749999761581421
+INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.5121899247169495, Accuracy: 0.7469387650489807, Recall: 0.7138888835906982
+INFO:root:NeuralNetwork saved successfully

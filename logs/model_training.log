@@ -1,0 +1,20 @@
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+INFO:root:LogisticRegression trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.7142857142857143, Recall: 0.725, F1 Score: 0.7131147540983607
+INFO:root:LogisticRegression saved successfully
+INFO:root:RandomForestClassifier trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.6761904761904762, Recall: 0.775, F1 Score: 0.7010050251256281
+INFO:root:RandomForestClassifier saved successfully
+ERROR:root:Error training XGBClassifier: Invalid classes inferred from unique values of `y`.  Expected: [0 1], got ['Converted' 'Not converted']
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.csv
+INFO:root:Data split into training and testing sets
+INFO:root:LogisticRegression trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.7142857142857143, Recall: 0.725, F1 Score: 0.7131147540983607
+INFO:root:LogisticRegression saved successfully
+INFO:root:RandomForestClassifier trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.6761904761904762, Recall: 0.775, F1 Score: 0.7010050251256281
+INFO:root:RandomForestClassifier saved successfully
+INFO:root:XGBClassifier trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.780952380952381, Recall: 0.8, F1 Score: 0.7815468113975577
+INFO:root:XGBClassifier saved successfully

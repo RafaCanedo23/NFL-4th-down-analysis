@@ -1,0 +1,33 @@
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.csv
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.csv
+ERROR:root:Error loading data: "['play_location_right', 'play_location_left', 'play_location_middle', 'posteam_type_away', 'posteam_type_home'] not found in axis"
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+ERROR:root:Error in data preprocessing: "['no_huddle', 'half_seconds_remaining', 'play_location_right', 'play_location_left', 'play_location_middle', 'shotgun', 'posteam_type_away', 'posteam_type_home'] not found in axis"
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.csv
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.csv
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+ERROR:root:Error in feature deleting: "['no_huddle', 'half_seconds_remaining', 'play_location_right', 'play_location_left', 'play_location_middle', 'shotgun', 'posteam_type_away', 'posteam_type_home'] not found in axis"
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+ERROR:root:Error in feature deleting: "['no_huddle', 'half_seconds_remaining', 'play_location_right', 'play_location_left', 'play_location_middle', 'shotgun', 'posteam_type_away', 'posteam_type_home'] not found in axis"
+INFO:root:Data loaded successfully from data/fourth_down_data.csv
+INFO:root:Data preprocessing completed successfully
+INFO:root:Feature importance completed successfully
+INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.csv
