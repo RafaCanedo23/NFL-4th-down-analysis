@@ -4,6 +4,9 @@ This repository contains the code for a machine learning project that predicts t
 
 ## Project Structure
 - config.py
+- EDA
+    - EDA_problem.ipynb
+    - EDA_stats.ipynb
 - data_preparation.py
 - model_training.py
 - neural_network_training.py
