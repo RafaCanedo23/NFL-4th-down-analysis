@@ -1,6 +1,6 @@
 # Configuration file for paths and parameters
 
-DATA_PATH = "data/fourth_down_data.csv"
+DATA_PATH = "data/fourth_down_data.pkl"
 SAVED_MODEL_PATH = "models/"
 LOGGING_PATH = "logs/"
 
