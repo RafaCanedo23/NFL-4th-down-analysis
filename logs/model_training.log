@@ -18,3 +18,8 @@ INFO:root:RandomForestClassifier saved successfully
 INFO:root:XGBClassifier trained successfully
 INFO:root:Model evaluation completed with Accuracy: 0.780952380952381, Recall: 0.8, F1 Score: 0.7815468113975577
 INFO:root:XGBClassifier saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data.pkl
+INFO:root:Data split into training and testing sets
+ERROR:root:Error training LogisticRegression: could not convert string to float: 'home'
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.pkl
+ERROR:root:Error splitting data: Input contains NaN

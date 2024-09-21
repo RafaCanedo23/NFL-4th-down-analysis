@@ -14,10 +14,10 @@ logging.basicConfig(filename=config.LOGGING_PATH + 'model_training.log', level=l
 
 def load_preprocessed_data(file_path):
     """
-    Load preprocessed data from a CSV file.
+    Load preprocessed data from a pickle file.
     """
     try:
-        data = pd.read_csv(file_path)
+        data = pd.read_pickle(file_path)
         logging.info(f"Preprocessed data loaded successfully from {file_path}")
         return data
     except Exception as e:
@@ -89,7 +89,7 @@ def save_model(model, model_name):
 
 if __name__ == "__main__":
     os.makedirs(config.SAVED_MODEL_PATH, exist_ok=True)
-    preprocessed_data = load_preprocessed_data(config.DATA_PATH.replace('.csv', '_preprocessed.csv'))
+    preprocessed_data = load_preprocessed_data(config.DATA_PATH.replace('.pkl', '_preprocessed.pkl'))
     target_variable = config.DATA_PARAMS['target_variable']
     X_train, X_test, y_train, y_test = split_data(preprocessed_data, target_variable)
 

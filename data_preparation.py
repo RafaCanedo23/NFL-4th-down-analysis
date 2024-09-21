@@ -9,10 +9,10 @@ logging.basicConfig(filename=config.LOGGING_PATH + 'data_preparation.log', level
 
 def load_data(file_path):
     """
-    Load data from a CSV file.
+    Load data from a pickle file.
     """
     try:
-        data = pd.read_csv(file_path).drop(['yardline_group', 'play_type'], axis = 1)
+        data = pd.read_pickle(file_path).drop(['yardline_group', 'play_type'], axis = 1)
         logging.info(f"Data loaded successfully from {file_path}")
         return data
     except Exception as e:
@@ -63,10 +63,10 @@ def feature_importance_reduction(data):
 
 def save_preprocessed_data(data, file_path):
     """
-    Save preprocessed data to a CSV file.
+    Save preprocessed data to a pickle file.
     """
     try:
-        data.to_csv(file_path, index=False)
+        data.to_pickle(file_path)
         logging.info(f"Preprocessed data saved to {file_path}")
     except Exception as e:
         logging.error(f"Error saving preprocessed data: {e}")
@@ -77,4 +77,4 @@ if __name__ == "__main__":
     raw_data = load_data(config.DATA_PATH)
     preprocessed_data = preprocess_data(raw_data)
     feat_importance_data = feature_importance_reduction(preprocessed_data)
-    save_preprocessed_data(feat_importance_data, config.DATA_PATH.replace('.csv', '_preprocessed.csv'))
+    save_preprocessed_data(feat_importance_data, config.DATA_PATH.replace('.pkl', '_preprocessed.pkl'))

@@ -31,3 +31,11 @@ INFO:root:Data loaded successfully from data/fourth_down_data.csv
 INFO:root:Data preprocessing completed successfully
 INFO:root:Feature importance completed successfully
 INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.csv
+INFO:root:Data loaded successfully from data/fourth_down_data.pkl
+INFO:root:Data preprocessing completed successfully
+INFO:root:Feature importance completed successfully
+ERROR:root:Error saving preprocessed data: NDFrame.to_pickle() got an unexpected keyword argument 'index'
+INFO:root:Data loaded successfully from data/fourth_down_data.pkl
+INFO:root:Data preprocessing completed successfully
+INFO:root:Feature importance completed successfully
+INFO:root:Preprocessed data saved to data/fourth_down_data_preprocessed.pkl
