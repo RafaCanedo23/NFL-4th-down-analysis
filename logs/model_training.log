@@ -23,3 +23,14 @@ INFO:root:Data split into training and testing sets
 ERROR:root:Error training LogisticRegression: could not convert string to float: 'home'
 INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.pkl
 ERROR:root:Error splitting data: Input contains NaN
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.pkl
+INFO:root:Data split into training and testing sets
+INFO:root:LogisticRegression trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.7956600361663653, Recall: 0.8293515358361775, F1 Score: 0.8113522537562604
+INFO:root:LogisticRegression saved successfully
+INFO:root:RandomForestClassifier trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.7522603978300181, Recall: 0.8020477815699659, F1 Score: 0.7742998352553542
+INFO:root:RandomForestClassifier saved successfully
+INFO:root:XGBClassifier trained successfully
+INFO:root:Model evaluation completed with Accuracy: 0.8553345388788427, Recall: 0.8430034129692833, F1 Score: 0.8606271777003485
+INFO:root:XGBClassifier saved successfully

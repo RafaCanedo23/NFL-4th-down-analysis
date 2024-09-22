@@ -386,3 +386,16 @@ WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\eng
 INFO:root:Neural network trained successfully
 INFO:root:Model evaluation completed with Loss: 0.5121899247169495, Accuracy: 0.7469387650489807, Recall: 0.7138888835906982
 INFO:root:NeuralNetwork saved successfully
+INFO:root:Preprocessed data loaded successfully from data/fourth_down_data_preprocessed.pkl
+INFO:root:Data split into training and testing sets
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\optimizers\__init__.py:309: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+WARNING:tensorflow:From C:\Users\rafae\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+INFO:root:Neural network trained successfully
+INFO:root:Model evaluation completed with Loss: 0.3988756239414215, Accuracy: 0.8155515193939209, Recall: 0.80887371301651
+INFO:root:NeuralNetwork saved successfully

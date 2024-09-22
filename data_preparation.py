@@ -31,7 +31,7 @@ def preprocess_data(data):
         encoder = OneHotEncoder(sparse_output=False)
         encoded_data = encoder.fit_transform(data[categorical_variables])
         encoded_df = pd.DataFrame(encoded_data, columns=encoder.get_feature_names_out(categorical_variables))
-        data = data.drop(categorical_variables, axis=1)
+        data = data.drop(categorical_variables, axis=1).reset_index(drop=True)
         data = pd.concat([data, encoded_df], axis=1)
 
         # Scale numerical variables

@@ -110,5 +110,3 @@ if __name__ == "__main__":
     xgb_model = train_model('XGBClassifier', X_train, y_train, xgb_params)
     xgb_accuracy, xgb_recall, xgb_f1 = evaluate_model(xgb_model, X_test, y_test)
     save_model(xgb_model, 'XGBClassifier')
-
-print(xgb_accuracy, xgb_recall, xgb_f1)
